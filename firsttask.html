@@ -15,6 +15,7 @@
                 font-family: verdana;
                 font-size: medium;
                 text-align: left;
+                font-size: large;
             }
             h2
             {
@@ -34,76 +35,70 @@
             }
             input{
                 margin: 2px;
+                padding: 15px;
                 width: 95%;
-                background-color: ivory;
+                background-color: rgb(245, 245, 138);
                 letter-spacing: 2px;
                 border-radius: 10px;
                 color: black;
             }
             fieldset{
                 margin: auto;
-                width:40%;
-                border: 20%;
+                width:30%;
+                border: 30%;
                 border-radius: 40px;
-                background-image: linear-gradient(#DAA06D, midnightblue,cornflowerblue,WHITE, darkgrey,#DAA06D,  cornflowerblue);
-                background-size: 400%;
+                border-color:midnightblue;
+                background-image: linear-gradient(#DAA06D, midnightblue,cornflowerblue, darkgrey,#DAA06D, black,  cornflowerblue);
+                background-size: 100%;
                 background-repeat: no-repeat;
             }
         </style>
     </head>
     <body>
-        <h2 style="margin-left: 38.5%; color: midnightblue; letter-spacing: 2px; font-size:xx-large ;"><em>SIMPLE BIODATA FORM</em></h2>
-        <form form-check required style="height: 50vh;">
-            <fieldset style="height:105vh; margin: auto;" >
-                <legend width="200"></legend>
-                <label for="first name"><h4>First Name</h4></label>
-                <input style="width: 95%;" required type="text" name="fname" maxlength="20" id="first name" placeholder="FIRST NAME">
-                <label for="last name"><h4>Last Name </h4></label>
-                <input style="width: 95%;"  required type="text" name="lname" maxlength="20" id="last name" placeholder="LAST NAME">
-                <label><h4>Email Address</h4></label>
-                <input style="width: 95%;" required type="email" name="email" id="email" placeholder="user@gmail.com">
-                <label for="phone number"><h4> Phone number</h4></label>
-                <input style="width: 95%;" required type="tel" name="phone number" id="phone" placeholder="08000000000">
-                <label><h4>Gender</h4></label>
-                <select style="width: 95%;" class="form-control" id="sel">
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
-                <h4>Country</h4>
-                <div class="form-group">
-                    <select style="width: 95%;" class="form-control" id="sel">
-                        <option>Nigeria</option>
-                        <option>Ghana</option>
-                        <option>Togo</option>
-                        <option>Cameroon</option>
-                        <option>Angola</option>
-                        <option>South Africa</option>
-                        <option>Benin</option>
-                        <option>Algeria</option>
-                        <option>Libera</option>
-                        <option>Gabon</option>
+        <h2 style="margin-left: 38.5%; display: inline-block; background-color: rgb(245, 245, 138); background-size: 20%; color: midnightblue; letter-spacing: 2px; font-size:xx-large ;"><em>SIMPLE BIODATA FORM</em></h2>
+        <div style="margin-right: auto; vertical-align: middle; margin-left: auto;">
+            <form form-check required>
+                <fieldset style="height:80vh; margin: auto;" >
+                    <legend width="200"></legend>
+                    <label for="name"><h4>Full Name</h4></label>
+                    <input style="width: 95%;" required type="text" name="fname" maxlength="20" id="first name" placeholder="FULL NAME">
+                    <label><h4>Email Address</h4></label>
+                    <input style="width: 95%;" required type="email" name="email" id="email" placeholder="user@gmail.com">
+                    <label for="phone number"><h4> Phone number</h4></label>
+                    <input style="width: 95%;" required type="tel" name="phone number" id="phone" placeholder="08000000000">
+                    <label><h4>Gender</h4></label>
+                    <select style="width: 95%; background-color: rgb(245, 245, 138);" class="form-control" id="sel">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
                     </select>
-                </div>
-                <h4>Marital Status</h4>
-                <div class="form-group">
-                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="yes">Married</label>
-                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="no">Single</label>
-                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="nev">Divorced</label>
-                </div>
-                <label for="pwrd"><h4>Password</h4></label>
-                <input style="width: 95%;" required type="password" name="password" id="pwrd">
-                <br><br>
-                <input style="width:30% ; display: flex; justify-content: center; margin: auto; padding: 20px; text-align: center; margin: auto; background-color: royalblue; color: ivory;"  required type="submit" name="submit" value="SUBMIT"> 
-                <p style="line-height:150%;">By clicking the 'Submit' button, you confirm that you accept our terms and conditions.</p>
-                <br><p style="line-height: 150%;">Do well to ignore if you do not agree to our terms and conditions.</p>
-
-                <script>
-                    "use script";
-                    alert("Your details have been saved successfully")
-                </script> 
-            </fieldset>
-        </form>
-
+                    <h4>Country</h4>
+                    <div class="form-group">
+                        <select style="width: 95%; background-color: rgb(245, 245, 138);" class="form-control" id="sel">
+                            <option>Nigeria</option>
+                            <option>Ghana</option>
+                            <option>Togo</option>
+                            <option>Cameroon</option>
+                            <option>Angola</option>
+                            <option>South Africa</option>
+                            <option>Benin</option>
+                            <option>Algeria</option>
+                            <option>Libera</option>
+                            <option>Gabon</option>
+                        </select>
+                    </div>
+                    <label for="pwrd"><h4>Password</h4></label>
+                    <input style="width: 95%; padding:5px ;" required type="password" name="password" id="pwrd">
+                    <br><br>
+                    <input style="width:30% ; display: flex; justify-content: center; margin: auto; padding: 20px; text-align: center; margin: auto; background-color: royalblue; color: ivory;"  required type="submit" name="submit" value="SUBMIT"> 
+                    <p style="line-height:150%; color: white;">By clicking the 'Submit' button, it means that;</p>
+                    <p style="line-height: 150%; color: white">*You confirm that you accept our terms and conditions.</p> 
+                    <script>
+                        "use script";
+                        alert("Your details have been saved successfully")
+                    </script> 
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>
