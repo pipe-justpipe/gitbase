@@ -4,46 +4,106 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Week 1 Task</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-        "use script";
-        alert("Your details have been saved successfully")
-        </script>
+        <title>Week 2 Task</title>
+        <style>
+            h4
+            {
+                color: black;
+                margin-left: auto; margin-right: auto; padding-left: 30%;
+                font-style: italic;
+                font-weight: 100;
+                font-family: verdana;
+                font-size: medium;
+                text-align: left;
+            }
+            h2
+            {
+            color: black; font-family: Verdana;
+            }
+            h3{
+            color: #63452a;
+            }
+            body{
+            background-image:url(frost.jpg);
+            background-size: 105%;
+            background-repeat: no-repeat;
+            margin: 10px;
+            }
+            label{
+                letter-spacing: 5px;
+            }
+            input{
+                margin: 2px;
+                width: 95%;
+                background-color: ivory;
+                letter-spacing: 2px;
+                border-radius: 10px;
+                color: black;
+            }
+            fieldset{
+                margin: auto;
+                width:40%;
+                border: 20%;
+                border-radius: 40px;
+                background-image: linear-gradient(#DAA06D, midnightblue,cornflowerblue,WHITE, darkgrey,#DAA06D,  cornflowerblue);
+                background-size: 400%;
+                background-repeat: no-repeat;
+            }
+        </style>
     </head>
     <body>
-        <h2 style="margin-left: 42.5%;">SIMPLE BIODATA FORM</h2>
-        <form form-check required>
-            <fieldset style="width: 15%; margin-left: auto; margin-right: auto; background-color: darkgreen;">
+        <h2 style="margin-left: 38.5%; color: midnightblue; letter-spacing: 2px; font-size:xx-large ;"><em>SIMPLE BIODATA FORM</em></h2>
+        <form form-check required style="height: 50vh;">
+            <fieldset style="height:105vh; margin: auto;" >
                 <legend width="200"></legend>
-                <label for="first name"><h3><strong>First Name </strong></h3></label>
+                <label for="first name"><h4>First Name</h4></label>
                 <input style="width: 95%;" required type="text" name="fname" maxlength="20" id="first name" placeholder="FIRST NAME">
-                <br>
-                <br>
-                <label for="last name"><h3><strong>Last Name </strong></h3></label>
+                <label for="last name"><h4>Last Name </h4></label>
                 <input style="width: 95%;"  required type="text" name="lname" maxlength="20" id="last name" placeholder="LAST NAME">
-                <br>
-                <br>
-                <label><h3><strong>Email Address</strong></h3></label>
-                <input style="width: 95%;" required type="email" name="email" id="email" placeholder="name@gmail.com">
-                <br>
-                <br>
-                <label for="phone number"><h3><strong> Phone number </strong></h3></label>
+                <label><h4>Email Address</h4></label>
+                <input style="width: 95%;" required type="email" name="email" id="email" placeholder="user@gmail.com">
+                <label for="phone number"><h4> Phone number</h4></label>
                 <input style="width: 95%;" required type="tel" name="phone number" id="phone" placeholder="08000000000">
-                <br>
-                <br>
-                <label><h3><strong>Gender</strong></h3></label>
-                <input required type="radio" name="sex" id="male" value="Male">Male
-                <input  required type="radio" name="sex" id="female" value="Female">Female
-                <br>
-                <br>
-                <label for="pwrd"><h3><strong>Input Password </strong></h3></label>
+                <label><h4>Gender</h4></label>
+                <select style="width: 95%;" class="form-control" id="sel">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <h4>Country</h4>
+                <div class="form-group">
+                    <select style="width: 95%;" class="form-control" id="sel">
+                        <option>Nigeria</option>
+                        <option>Ghana</option>
+                        <option>Togo</option>
+                        <option>Cameroon</option>
+                        <option>Angola</option>
+                        <option>South Africa</option>
+                        <option>Benin</option>
+                        <option>Algeria</option>
+                        <option>Libera</option>
+                        <option>Gabon</option>
+                    </select>
+                </div>
+                <h4>Marital Status</h4>
+                <div class="form-group">
+                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="yes">Married</label>
+                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="no">Single</label>
+                    <label style="line-height: 150%;"><input type="radio" name="workedstatus" value="nev">Divorced</label>
+                </div>
+                <label for="pwrd"><h4>Password</h4></label>
                 <input style="width: 95%;" required type="password" name="password" id="pwrd">
-                <br>
-                <br>
-                <input required type="submit" name="submit" value="SUBMIT"> 
+                <br><br>
+                <input style="width:30% ; display: flex; justify-content: center; margin: auto; padding: 20px; text-align: center; margin: auto; background-color: royalblue; color: ivory;"  required type="submit" name="submit" value="SUBMIT"> 
+                <p style="line-height:150%;">By clicking the 'Submit' button, you confirm that you accept our terms and conditions.</p>
+                <br><p style="line-height: 150%;">Do well to ignore if you do not agree to our terms and conditions.</p>
+
+                <script>
+                    "use script";
+                    alert("Your details have been saved successfully")
+                </script> 
             </fieldset>
-        </form>       
-        
+        </form>
+
     </body>
 </html>
