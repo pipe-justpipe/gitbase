@@ -6,17 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Week 2 Task</title>
         <style>
-            h4
-            {
-                color: black;
-                margin-left: auto; margin-right: auto; padding-left: 30%;
-                font-style: italic;
-                font-weight: 100;
-                font-family: verdana;
-                font-size: medium;
-                text-align: left;
-                font-size: large;
-            }
             h2
             {
             color: black; font-family: Verdana;
@@ -25,13 +14,20 @@
             color: #63452a;
             }
             body{
-            background-image:url(frost.jpg);
+            background-image:url(NATURE.jpg);
             background-size: 105%;
             background-repeat: no-repeat;
             margin: 10px;
             }
             label{
                 letter-spacing: 5px;
+                color: black;
+                font-style: oblique;
+                font-weight: 800;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: larger;
+                margin-left: 0px;
+
             }
             input{
                 margin: 2px;
@@ -42,39 +38,54 @@
                 border-radius: 10px;
                 color: black;
             }
+            select{
+                margin-left: auto; margin-right: auto; padding-left: 30%;
+                padding: 15px;
+                width: 95%;
+                background-color: rgb(245, 245, 138);
+                letter-spacing: 2px;
+                border-radius: 10px;
+                color: black;
+                margin-left: auto;
+            }
             fieldset{
+                text-align: center;
                 margin: auto;
                 width:30%;
                 border: 30%;
                 border-radius: 40px;
                 border-color:midnightblue;
-                background-image: linear-gradient(#DAA06D, midnightblue,cornflowerblue, darkgrey,#DAA06D, black,  cornflowerblue);
+                background-image: linear-gradient(#DAA06D, royalblue,cornflowerblue, darkgrey,#DAA06D,  cornflowerblue);
                 background-size: 100%;
                 background-repeat: no-repeat;
+            }
+            p{
+                text-align: center;
+                background-color: black;
+                color: white;
             }
         </style>
     </head>
     <body>
-        <h2 style="margin-left: 38.5%; display: inline-block; background-color: rgb(245, 245, 138); background-size: 20%; color: midnightblue; letter-spacing: 2px; font-size:xx-large ;"><em>SIMPLE BIODATA FORM</em></h2>
+        <h2 style="margin-left: 37.45%; display: inline-block; background-color: rgb(245, 245, 138); background-size: 20%; color: midnightblue; letter-spacing: 2px; font-size:xx-large ;"><em>SIMPLE BIODATA FORM</em></h2>
         <div style="margin-right: auto; vertical-align: middle; margin-left: auto;">
-            <form form-check required>
-                <fieldset style="height:80vh; margin: auto;" >
+            <form form-check required >
+                <fieldset style=" margin: auto; text-align: left;" >
                     <legend width="200"></legend>
                     <label for="name"><h4>Full Name</h4></label>
-                    <input style="width: 95%;" required type="text" name="fname" maxlength="20" id="first name" placeholder="FULL NAME">
+                    <input style="width: 89%;" required type="text" name="fname" maxlength="20" id=" name" placeholder="FULL NAME">
                     <label><h4>Email Address</h4></label>
-                    <input style="width: 95%;" required type="email" name="email" id="email" placeholder="user@gmail.com">
+                    <input style="width: 89%;" required type="email" name="email" id="email" placeholder="user@gmail.com">
                     <label for="phone number"><h4> Phone number</h4></label>
-                    <input style="width: 95%;" required type="tel" name="phone number" id="phone" placeholder="08000000000">
+                    <input style="width: 89%;" required type="tel" name="phone number" id="phone" placeholder="08000000000">
                     <label><h4>Gender</h4></label>
-                    <select style="width: 95%; background-color: rgb(245, 245, 138);" class="form-control" id="sel">
+                    <select style="width: 95%; padding: 15px; background-color: rgb(245, 245, 138); border-radius: 10px;" class="form-control" id="sel">
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
                     </select>
-                    <h4>Country</h4>
-                    <div class="form-group">
-                        <select style="width: 95%; background-color: rgb(245, 245, 138);" class="form-control" id="sel">
+                    <label><h4>Country</h4></label>
+                        <select style="width: 95%; padding: 15px; background-color: rgb(245, 245, 138); border-radius:10px ;" class="form-control" id="sel">
                             <option>Nigeria</option>
                             <option>Ghana</option>
                             <option>Togo</option>
@@ -86,19 +97,24 @@
                             <option>Libera</option>
                             <option>Gabon</option>
                         </select>
-                    </div>
                     <label for="pwrd"><h4>Password</h4></label>
-                    <input style="width: 95%; padding:5px ;" required type="password" name="password" id="pwrd">
+                    <input style="width: 89%; padding:15px ;" required type="password" name="password" id="pwrd">
                     <br><br>
                     <input style="width:30% ; display: flex; justify-content: center; margin: auto; padding: 20px; text-align: center; margin: auto; background-color: royalblue; color: ivory;"  required type="submit" name="submit" value="SUBMIT"> 
-                    <p style="line-height:150%; color: white;">By clicking the 'Submit' button, it means that;</p>
-                    <p style="line-height: 150%; color: white">*You confirm that you accept our terms and conditions.</p> 
                     <script>
                         "use script";
                         alert("Your details have been saved successfully")
                     </script> 
                 </fieldset>
             </form>
+            <div style="text-align: center;">
+                <p style="line-height:130%;  margin-left: auto; margin-right: auto; display: inline-block; font-size: larger;"><strong>By clicking the 'Submit' button, it means that:</strong></p>
+            </div>
+            <div style="text-align: center;">
+                <p style="line-height: 130%; margin-left: auto; margin-right: auto; display: inline-block; font-size: larger;"><strong>*You confirm that you accept our terms and conditions.</strong></p> 
+            </div>
+
+            
         </div>
     </body>
 </html>
