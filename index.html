@@ -74,9 +74,6 @@
                 color: white;
                 width: auto;
             }
-            .rightSection {
-                float: right;
-            }
             @media screen and (max-width: 870px) {
             nav .links
             {
@@ -414,7 +411,18 @@
 <body>
     <div class="container">
         <nav>
-            <button class="btn1" id="btn">
+   
+            <div class="rightSection">
+            <a class="selected links" href="h">Home</a>
+            <a class="links" href="#">Contact Us</a>
+            <a class="links" href="#">About Us</a>
+            <a class="links" href="#">More Info</a>
+            <a class="links" href="#">Register</a>
+            <a class="links" style="width: 100px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057; ">search</i></a>
+            <a class="links" style="width: 100px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">refresh</i></a>
+            <a class="links" style="width: 100px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">recommend</i></a>
+            <a class="links" style="width: 100px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">menu</i></a>
+            <button style="float: right;" class="btn1" id="btn">
                 Click here
                 <i class="bx bx-chevron-down" id="arrow"></i>
             </button>
@@ -462,15 +470,6 @@
                 }
                 });
             </script>
-            <div class="rightSection">
-            <a class="selected links" href="h">Home</a>
-            <a class="links" href="#">Contact Us</a>
-            <a class="links" href="#">About Us</a>
-            <a class="links" href="#">More Info</a>
-            <a class="links" href="#">Register</a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057; ">search</i></a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">refresh</i></a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">recommend</i></a>
         </nav>
         <div style="position: relative;">
             <img class="firstimage" src="ggggg.webp" alt="Snow" style="width:100%; height: 70vh; border-radius: 30px;">
