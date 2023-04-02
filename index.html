@@ -29,7 +29,7 @@
                 line-height: 25px;
                 border-radius: 4px;
                 margin-right: 10px;
-                width: 350px;
+                width: 280px;
             }
             li{
                 list-style-type: none;
@@ -100,8 +100,9 @@
                 border-radius: 20px;
                 padding: 30px;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: center;   
+                justify-content: center;
+                align-items: center; 
+                margin: auto; 
             }
             .team{
                 background-color: #FFFDD0;
@@ -198,7 +199,7 @@
                 padding: 20px;
                 border-radius: 20px;
                 border: 6px solid white ;
-                width: 300px;
+                width: auto;
                 text-align: center;
                 background-color: #c3b08b;
                 display: flex;
@@ -403,14 +404,7 @@
      }
     // Add active class to the current button (highlight it)
     var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+
     </script>
     <link 
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
@@ -420,16 +414,6 @@
 <body>
     <div class="container">
         <nav>
-            <div class="rightSection">
-            <a class="selected links" href="h">Home</a>
-            <a class="links" href="#">Contact Us</a>
-            <a class="links" href="#">About Us</a>
-            <a class="links" href="#">More Info</a>
-            <a class="links" href="#">Register</a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057; ">search</i></a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">refresh</i></a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">recommend</i></a>
-            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">menu</i></a>
             <button class="btn1" id="btn">
                 Click here
                 <i class="bx bx-chevron-down" id="arrow"></i>
@@ -478,6 +462,15 @@
                 }
                 });
             </script>
+            <div class="rightSection">
+            <a class="selected links" href="h">Home</a>
+            <a class="links" href="#">Contact Us</a>
+            <a class="links" href="#">About Us</a>
+            <a class="links" href="#">More Info</a>
+            <a class="links" href="#">Register</a>
+            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057; ">search</i></a>
+            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">refresh</i></a>
+            <a class="links" style="width: 50px;" href="#"><i class="material-icons" style="font-size: 40px; color: #af8057;">recommend</i></a>
         </nav>
         <div style="position: relative;">
             <img class="firstimage" src="ggggg.webp" alt="Snow" style="width:100%; height: 70vh; border-radius: 30px;">
@@ -503,34 +496,34 @@
         <br>
         <br>
         <div class="hhh" style="display: flex; margin-left: auto; margin-right: auto; flex-wrap: wrap; align-items: center; justify-content: center;" >
-            <div class="vision" style="width: 350px; text-align: center;">
-                <ul>
-                 <i class="material-icons">cloud</i>
-                 <li>OUR VISION</li>
+            <div class="vision" style="width: 350px; text-align: center; justify-content: center;">
+                <ul align="left">
+                    <i align="left" class="material-icons">cloud</i>
+                 <li style="text-align: left; margin: 0; ">OUR VISION</li>
                  <hr align="left" style="width: 10%;">
                  <li>Sale of Quality and affordable gadgets.</li>
-                 <li>Provision of unparalled experience.</li>
+                 <li>Provision of unparalled.</li>
                   <li>Long lasting products.</li>
              </ul>
             </div>
              <div class="vision" style="margin-top: 20px; width: 350px;  margin-bottom: 20px;">
-                <ul>
-                    <i class="material-icons">computer</i>
-                    <li>SOLUTIONS</li>
+                <ul align="left">
+                    <i align="left" class="material-icons">computer</i>
+                    <li align="left">SOLUTIONS</li>
                     <hr align="left" style="width: 10%;">
-                    <li>Best Gadget and Accessories.</li>
-                    <li>Recomendations.</li>
-                    <li>Help from our Engineer.</li>
+                    <li align="left">Best Gadget and Accessories.</li>
+                    <li align="left">Recomendations of lorem.</li>
+                    <li align="left">Help from our Engineer.</li>
                 </ul>
             </div>
             <div class="vision" style="background-color: #c3b08b; width: 350px; color: #3c1321;">
-                <ul>
-                    <i class="material-icons">smartphone</i>
-                    <li>PRODUCTS</li>
+                <ul align="left">
+                    <i align="left" class="material-icons">smartphone</i>
+                    <li align="left">PRODUCTS</li>
                     <hr align="left" style="width: 10%; color: #5C4033;">
-                    <li>Apple Products.</li>
-                    <li>Samsung Products.</li>
-                    <li>Head Sets and more.</li>
+                    <li align="left">Apple Products of lorem.</li>
+                    <li align="left">Samsung Products and others.</li>
+                    <li align="left">Head Sets and more.</li>
                 </ul>
             </div>
          </div>
@@ -607,12 +600,12 @@
             <h2 style="color: #3c1321; text-align: left;">The Team.</h2>
             <h3 align="left" style="font-size: x-large; color: #5C4033;">WE ARE NOT JUST A STORE</h3>
             <h3 style="text-align: left; color:#5C4033; text-transform: capitalize; font-family: Tahoma; ">Aphiagades provides engineering services; <br>our Engineers are available for repair of your gadgets.</h3>
-            <div id="myBtnContainer">
+            <div id="myBtnContainer" class="main" >
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('2')"> Phones</button>
                 <button class="btn" onclick="filterSelection('3')"> System</button>
                 <button class="btn" onclick="filterSelection('4')"> Accessories</button>
-            </div>
+            
                 <!-- Portfolio Gallery Grid -->
                 <div class="ro">
                     <div class="col 2">
@@ -653,31 +646,32 @@
         <div class="vl"></div>
         <div class="hhh" style="display: flex; margin-left: auto; margin-right: auto; text-align: center; flex-wrap: wrap; align-items: center; justify-content: center;">
             <div class="vision" style="background-color: #c3b08b; color: #3c1321; width: 350px;">
-                <ul>
+                <ul align="left">
                     <i class="material-icons">cloud</i>
                     <li>Who We Are</li>
                     <hr align="left" style="width: 10%;">
-                    <li>At Aphiagades, we have been providing clcal support in Nigeria since 2005</li>
+                    <li>At Aphiagades support in Nigeria since 2005</li>
                     <li>Provision of unparalled experience.</li>
+                    <li>Long lasting products.</li>
                     <li>Long lasting products.</li>
                 </ul>
             </div>
             <div class="vision" style="background-color: #c3b08b; margin-top: 10px; margin-bottom: 10px; color: #3c1321; width: 350px;">
-                <ul>
+                <ul align="left">
                     <i class="material-icons">computer</i>
                     <li>Our Philosophy</li>
                     <hr align="left" style="width: 10%;">
-                    <li>The Gadgets house promise business owner in the world;ure the driving spirit.</li>
+                    <li>The Gadgets house promise business owner in the world;ur the driving spirit.</li>
                     <li>Recomendations.</li>
                     <li>Help from our Engineer.</li>
                 </ul>
             </div>
             <div class="vision" style="width: 350px;">
-                <ul>
+                <ul align="left">
                     <i class="material-icons">smartphone</i>
                     <li>How we work</li>
                     <hr align="left" style="width: 10%; color: #5C4033;">
-                    <li>We  capitalize on providing the best in the areas of distribution, production and repair.</li>
+                    <li>We  capitalize on production and repair.</li>
                     <li>You can check our App on google play store and app store.</li>
                     <li>Head Sets and more.</li>
                 </ul>
@@ -711,8 +705,7 @@
                  we now have available super convenient chairs and adjustable tables for your
                 onsectetur adipisicing elit. Deleniti neque sint doloribus asperiores ut error voluptatibus nobis, vita
                 e est minus unde adipisci ipsam veniam, cupiditate nihil ex assumenda dicta laudantium! Lorem ipsum dolor sit amet consectetur, adipisic
-                ing elit. A, rem quae illo iste iure quo ipsum consequuntur, animi molestiae explicabo conse
-                  nisi corrupti dolore, ratione impedit fuga blanditiis corporis odit aliquid similique nulla adipisci
+                ing elit. A nisi corrupti dolore, ratione impedit fuga blanditiis corporis odit aliquid similique nulla adipisci
                    ab ullam officia perspiciatis asperiores minima, fugit facere.
                     <br>
                     <br>
@@ -750,7 +743,7 @@
                     <a href="page1.html" style="color: white;"> <button class="button" type="button" align="center" style="text-decoration: underline; color: white; border-radius: 20px; text-align: center; justify-content: center; background-color: #af8057; display: flex; margin-left: auto; font-size: larger; padding: 20px;">Make an enquiry!</button></a> 
                 </div>
             </div>
-            <div style="display: flex; margin-left: auto; margin-right: auto; flex-wrap: wrap; background-color: white; height: auto;">
+            <div style="display: flex; margin-left: auto; margin-right: auto; flex-wrap: wrap; background-color: ivory; height: auto;">
                 <div class="vision" style="background-color: white; color: #5C4033; width: 500px;">
                     <h3 style="font-size: 20px; color: #5C4033;">Lagos<br><hr width="10%" align="left"><span style="color: #5C4033;">+234 81122332</span></h3>
                 </div>
@@ -759,8 +752,25 @@
                 </div>
             </div>
         </div>
-        <footer style=" padding: 50px;  text-align: center; height: 10vh; background-color: ivory; color: #3c1321;"> @copyright peculiar 2023- All Rights Reserved.</footer>
-</body>
+        <footer style=" padding: 50px;  text-align: center; height: 10vh; background-color: lightgrey; color: #3c1321;"> @copyright peculiar 2023- All Rights Reserved.</footer>
+        <script>
+            console.log(window.innerHeight);
+            console.log(window.innerwidth);
+
+            function loaded(){
+                console.log("We loaded");
+            }
+            function afterPrint(){
+                window.alert("We printed");
+            }
+            function beforePrint(){
+                window.alert("Are you sure you want to print?");
+            }
+            function checkOnline(){
+                console.log("We are online");
+            }
+        </script>
+    </body>
 </html>
 <script>
     var form = document.getElementById("formId");
